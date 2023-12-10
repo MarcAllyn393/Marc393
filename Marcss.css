@@ -1,0 +1,199 @@
+html{
+    height: 0vh;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 20rem;
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins, sans-serif';
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(backgroundamongus.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+.bmi{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, red, orange);
+    font-weight: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    animation-delay: 0.5s;
+}
+.sub{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, blue, red);
+    font-weight: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+}
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+
+}
+.content h1{
+    font-size: 50px;
+    color: #fff;
+    animation-delay: 0.5s;
+}
+.content p{
+    margin: 10px 0 30px;
+    color: #fff;
+    animation-delay: 1s;
+}
+.content .bmi{
+    padding: 15px 80px;
+    font-size: 15px;
+    animation-delay: 1s;
+}
+.bmi:hover{
+    border-top-right-radius: 30px;
+}
+.sub:hover{
+    border-top-right-radius: 30px;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+footer{
+    vertical-align: bottom;
+    font-weight: 400;
+}
+footer{
+    background-color: #111;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.footerContainer{
+    width: 100%;
+    padding: 10px 100px 100px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialicons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+/*Hover Effect on Social Media Icons*/
+.socialicons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialicons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footernav{
+    margin: 30px 0;
+}
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footernav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footernav ul li a:hover{
+    opacity: 1;
+}
+.footerbotton{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerbotton p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px solid rgba(0,0,0,0,5);
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footernav ul{
+        flex-direction: column;
+    }
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+    }
+}
+.snake-bmi {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    font-weight: 400;
+}
